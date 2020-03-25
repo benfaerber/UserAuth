@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Login</title>
+	</head>
+	<body>
+		<%- include('../partial/header', {user: user}) %>
+		<%= message %>
+		<h1>Reigster</h1>
+		<form action="/register" method="post">
+			<input type="text" placeholder="Username" name="user[username]"><br>
+      <input type="password" placeholder="Password" name="user[password]"><br>
+      <input type="password" placeholder="Repeat Password" name="user[repeatPassword]"><br>
+			<input type="submit" value="Register" name="submit"><br>
+		</form>
+	</body>
+</html>

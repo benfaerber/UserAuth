@@ -1,0 +1,9 @@
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
+		<%- include('../partial/header', {user: user}) %>
+		<h1>Welcom to the home page <%= user ? user.username : 'bitch' %>!</h1>
+	</body>
+</html>

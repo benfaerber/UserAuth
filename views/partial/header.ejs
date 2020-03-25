@@ -1,0 +1,11 @@
+<% if (user) { %>
+    Hi, <%= user.username %>
+<% } %>
+
+<a href="/">Home</a>
+<% if (user) { %>
+    <a href="/signout">Signout</a>
+<% } else { %>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+<% } %>

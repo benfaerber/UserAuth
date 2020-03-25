@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Can't view this</title>
+  </head>
+  <body>
+    <%- include('../partial/header', {user: user}) %>
+    <h1>
+    <% if (!loggedIn) { %>
+    You must be logged in to view this page
+    <% } else { %>
+    You must not be logged in to view this page
+    <% } %>
+    (Page <%= page %>)
+    </h1>
+  </body>
+</html>
